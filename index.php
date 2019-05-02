@@ -56,7 +56,7 @@
       <header class="main-header">
         
         <!-- Logo -->
-        <a href="index.html" class="logo">
+        <a href="index.php" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels
           <span class="logo-mini"><b>A</b>LT</span>
           -->
@@ -129,7 +129,7 @@
             <li class="header">MENÚ DE NAVEGACIÓN</li>
             
             <li class="active">
-              <a href="index.html">
+              <a href="index.php">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
               </a>
             </li>
