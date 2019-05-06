@@ -691,10 +691,9 @@
 
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
-          <b>Version</b> 1.0.0
+          <b>Version</b> 0.0.0
         </div>
-        <strong>Copyright &copy; 2011-2019 <a href="https://www.acciona.com/" target="blank">Acciona business as unusual</a>.</strong> 
-        Todos los derechos reservados.
+        <strong>Prototipo &copy; 2011-2019 <a href="https://www.acciona.com/" target="blank">Acciona business as unusual</a></strong>
       </footer>
 
       <!-- Control Sidebar -->
