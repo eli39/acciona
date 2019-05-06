@@ -189,13 +189,13 @@
               <!-- small box -->
               <div class="small-box bg-green">
                 <div class="inner">
-                  <h3>32</h3>      
+                  <h3>46</h3>      
                   <p>Mediciones </p>
                 </div>
                 <div class="icon">
                   <i class="fa fa-clock-o"></i>
                 </div>
-                <a href="pages/mediciones/index.html" class="small-box-footer">Ver más <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="pages/mediciones/index.php" class="small-box-footer">Ver más <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->
@@ -204,13 +204,13 @@
               <!-- small box -->
               <div class="small-box bg-yellow">
                 <div class="inner">
-                  <h3>130</h3>      
+                  <h3>3</h3>      
                   <p>Bítacora</p>
                 </div>
                 <div class="icon">
                   <i class="fa fa-list"></i>
                 </div>
-                <a href="pages/bitacora/index.html" class="small-box-footer">Ver más <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="pages/bitacora/index.php" class="small-box-footer">Ver más <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->
@@ -220,13 +220,13 @@
                 <!-- small box -->
                 <div class="small-box bg-aqua">
                   <div class="inner">
-                      <h3>150</h3>      
+                      <h3>3</h3>      
                       <p>Usuarios</p>
                   </div>
                   <div class="icon">
                     <i class="fa fa-users"></i>
                   </div>
-                    <a href="pages/usuarios/index.html" class="small-box-footer">Ver más <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="pages/usuarios/index.php" class="small-box-footer">Ver más <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
               </div>
               <!-- ./col -->
@@ -241,7 +241,7 @@
                 <div class="icon">
                   <i class="fa fa-gears"></i>
                 </div>
-                <a href="pages/configuracion/index.html" class="small-box-footer">Ver más <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="pages/configuracion/index.php" class="small-box-footer">Ver más <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->
