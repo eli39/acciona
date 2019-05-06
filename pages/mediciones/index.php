@@ -691,7 +691,7 @@
 
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
-          <b>Version</b> 0.0.0
+          <b>Versión</b> 0.0.0
         </div>
         <strong>Prototipo &copy; 2011-2019 <a href="https://www.acciona.com/" target="blank">Acciona business as unusual</a></strong>
       </footer>
