@@ -136,27 +136,26 @@
             </li>
 
             <li>
-              <a href="pages/mediciones/index.html">
-                <i class="fa fa-clock-o"></i> 
-                <span>Mediciones</span>
+              <a href="pages/mediciones/index.php">
+                <i class="fa fa-clock-o"></i><span>Mediciones</span>
               </a>
             </li>
             
             
             <li>
-              <a href="pages/bitacora/index.html">
+              <a href="pages/bitacora/index.php">
                 <i class="fa fa-list"></i> <span> Bitácora </span>
               </a>
             </li>
 
             <li>
-              <a href="pages/usuarios/index.html">
+              <a href="pages/usuarios/index.php">
                 <i class="fa fa-users"></i> <span> Usuarios </span>
               </a>
             </li>
 
             <li>
-              <a href="pages/configuracion/index.html">
+              <a href="pages/configuracion/index.php">
                 <i class="fa fa-cog"></i> <span> Configuración </span>
               </a>
             </li>

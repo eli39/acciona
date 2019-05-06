@@ -143,25 +143,25 @@
             </li>
 
             <li>
-              <a href="../../pages/mediciones/index.html">
+              <a href="../../pages/mediciones/index.php">
                 <i class="fa fa-clock-o"></i> <span>Mediciones</span>                
               </a>
             </li>
             
             <li class="active">
-              <a href="../../pages/bitacora/index.html">
+              <a href="../../pages/bitacora/index.php">
                 <i class="fa fa-list"></i> <span> Bitácora </span>
               </a>
             </li>
 
             <li>
-              <a href="../../pages/usuarios/index.html">
+              <a href="../../pages/usuarios/index.php">
                 <i class="fa fa-users"></i> <span> Usuarios </span>
               </a>
             </li>
 
             <li>
-                <a href="../../pages/configuracion/index.html">
+                <a href="../../pages/configuracion/index.php">
                     <i class="fa fa-cog"></i> <span> Configuración </span>
                 </a>
             </li>
@@ -216,7 +216,7 @@
                                     </tr>                                
                                     <tr>
                                         <td>Eli Álvarez Romero</td>
-                                        <td>Programador</td>
+                                        <td>Operador</td>
                                         <td>Consulto archivo 5 minutal</td>
                                         <td>2019-Abr-12 09:00:00 am</td>
                                     </tr>
