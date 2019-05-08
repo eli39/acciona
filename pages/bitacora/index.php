@@ -18,22 +18,8 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
         folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
-    <!-- Morris chart -->
-    <link rel="stylesheet" href="../../bower_components/morris.js/morris.css">
-    <!-- jvectormap -->
-    <link rel="stylesheet" href="../../bower_components/jvectormap/jquery-jvectormap.css">
-    <!-- Date Picker -->
-    <link rel="stylesheet" href="../../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="../../bower_components/bootstrap-daterangepicker/daterangepicker.css">
-    <!-- bootstrap wysihtml5 - text editor -->
-    <link rel="stylesheet" href="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-    <!-- Datatables
     <link rel="stylesheet" href="../../plugins/datatables/jquery.dataTables.min.css">
     <link rel="stylesheet" href="../../plugins/datatables/buttons.dataTables.min.css">
-    -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -54,7 +40,7 @@
       }
       </style>
     <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="../../dist/css/Font.css">
   </head>
 
   <body class="hold-transition skin-red">
@@ -84,13 +70,13 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="https://lh3.googleusercontent.com/-O247xUodcSo/UWT2jHwdqAI/AAAAAAAAACI/-F8G06uP2dkZWUsHXpc-M5zmR8RKqN-awCEwYBhgL/w139-h140-p/61682_269127713209446_1039898510_n.jpg" class="user-image" alt="User Image">
+                  <img src="../../dist/img/eli.jpg" class="user-image" alt="User Image">
                   <span class="hidden-xs">Eli Álvarez</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="https://lh3.googleusercontent.com/-O247xUodcSo/UWT2jHwdqAI/AAAAAAAAACI/-F8G06uP2dkZWUsHXpc-M5zmR8RKqN-awCEwYBhgL/w139-h140-p/61682_269127713209446_1039898510_n.jpg" class="img-circle" alt="User Image">
+                    <img src="../../dist/img/eli.jpg" class="img-circle" alt="User Image">
 
                     <p>
                       Eli Álvarez - Administrador
@@ -123,7 +109,7 @@
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="https://lh3.googleusercontent.com/-O247xUodcSo/UWT2jHwdqAI/AAAAAAAAACI/-F8G06uP2dkZWUsHXpc-M5zmR8RKqN-awCEwYBhgL/w139-h140-p/61682_269127713209446_1039898510_n.jpg" class="img-circle" alt="User Image">
+              <img src="../../dist/img/eli.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
               <p>Eli Álvarez</p>
@@ -160,10 +146,17 @@
               </a>
             </li>
 
-            <li>
-                <a href="../../pages/configuracion/index.php">
-                    <i class="fa fa-cog"></i> <span> Configuración </span>
-                </a>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-cog"></i> <span> Configuración </span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="../../pages/configuracion/servidor.php"><i class="fa fa-server"></i> Servidor </a></li>
+                <li><a href="../../pages/configuracion/correo.php"><i class="fa fa-envelope "></i> Correo </a></li>
+              </ul>
             </li>
 
           </ul>
@@ -337,43 +330,10 @@
      -->
     <!-- Bootstrap 3.3.7 -->
     <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Morris.js charts
-    <script src="bower_components/raphael/raphael.min.js"></script>
-    <script src="bower_components/morris.js/morris.min.js"></script>
-    -->
-    <!-- Sparkline -->
-    <script src="../../bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
-    <!-- jvectormap -->
-    <script src="../../plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-    <script src="../../plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-    <!-- jQuery Knob Chart -->
-    <script src="../../bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
-    <!-- daterangepicker -->
-    <script src="../../bower_components/moment/min/moment.min.js"></script>
-    <script src="../../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <!-- datepicker -->
-    <script src="../../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-    <!-- Bootstrap WYSIHTML5 -->
-    <script src="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-    <!-- Slimscroll -->
-    <script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-    <!-- FastClick -->
-    <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="../../dist/js/pages/dashboard.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
     <!-- Datatables -->
     <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="../../plugins/datatables/dataTables.buttons.min.js"></script>    
-    <script src="../../plugins/datatables/buttons.flash.min.js"></script>    
-    <script src="../../plugins/datatables/jszip.min.js"></script>    
-    <script src="../../plugins/datatables/pdfmake.min.js"></script>    
-    <script src="../../plugins/datatables/vfs_fonts.js"></script>    
-    <script src="../../plugins/datatables/buttons.html5.min.js"></script>    
-    <script src="../../plugins/datatables/buttons.print.min.js"></script>    
     <script>
       $(document).ready(function() {
           $('#example').DataTable( {
