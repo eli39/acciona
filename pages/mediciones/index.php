@@ -768,22 +768,25 @@
     <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
     <script src="../../bower_components/jquery-ui/jquery-ui.min.js"></script>
-    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip
-    <script>
-      $.widget.bridge('uibutton', $.ui.button);
-    </script>
-     -->
+    
     <!-- Bootstrap 3.3.7 -->
     <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../../dist/js/pages/dashboard.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
     <!-- Datatables -->
     <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+  
+
     <script>
     $(document).ready(function() {
         $('#example').DataTable( {
                 language: {
-                "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
+                "url": "../../plugins/datatables/Spanish.json"
             }
         });        
     });

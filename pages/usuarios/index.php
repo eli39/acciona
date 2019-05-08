@@ -198,10 +198,10 @@
                                         <tr>
                                             <th>Id</th>
                                             <th>Nombre</th>
-                                            <th>Usuario</th>
+                                            <th>Usuario</th>                                            
+                                            <th>Contraseña</th>
                                             <th>Email</th>
                                             <th>Rol</th>
-                                            <th>Contraseña</th>
                                             <th>Estatus</th>
                                             <th>Configuración</th>
                                         </tr>
@@ -211,9 +211,9 @@
                                             <td>1000</td>
                                             <td>África Sofía Álvarez Hénandez</td>
                                             <td>africa1000</td>
-                                            <td>africa@acciona.com</td>
-                                            <td>Administrador</td>
                                             <td>asar</td>
+                                            <td>africa@acciona.com</td>
+                                            <td>Administrador</td>                                            
                                             <td>Activo</td>
                                             <td></td>
                                         </tr>
@@ -221,9 +221,9 @@
                                             <td>1001</td>
                                             <td>Eli Álvarez Romero</td>
                                             <td>eli1001</td>
-                                            <td>eli@acciona.com</td>
-                                            <td>Operador</td>
                                             <td>ear</td>
+                                            <td>eli@acciona.com</td>
+                                            <td>Operador</td>                                            
                                             <td>Activo</td>
                                             <td></td>
                                         </tr>
@@ -231,9 +231,9 @@
                                             <td>1002</td>
                                             <td>Juan Manuel Roque Jacinto</td>                                            
                                             <td>juan1002</td>
-                                            <td>juan@acciona.com</td>
-                                            <td>Operador</td>
                                             <td>jmrj</td>
+                                            <td>juan@acciona.com</td>
+                                            <td>Operador</td>                                            
                                             <td>Inactivo</td>
                                             <td></td>
                                         </tr>
@@ -267,6 +267,11 @@
                                                         </div>
 
                                                         <div class="form-group">
+                                                            <label>Contraseña</label>
+                                                            <input type="text" class="form-control" id="text-contrasena">
+                                                        </div>
+
+                                                        <div class="form-group">
                                                             <label>Email</label>
                                                             <input type="email" class="form-control" id="text-email">
                                                         </div>
@@ -277,11 +282,6 @@
                                                                 <option>Administrador</option>                                                                
                                                                 <option>Operador</option>
                                                             </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label>Contraseña</label>
-                                                            <input type="text" class="form-control" id="text-contrasena">
                                                         </div>
 
                                                         <div class="checkbox">
@@ -345,16 +345,20 @@
                                                         </div>
 
                                                         <div class="form-group">
-                                                            <label>Email</label>
-                                                            <input type="email" class="form-control" id="text-email-resgister">
-                                                        </div>
-
-                                                        
-                                                        <div class="form-group">
                                                             <label>Usuario</label>
                                                             <input type="text" class="form-control" id="text-usuario-resgister">
                                                         </div>
 
+                                                        <div class="form-group">
+                                                            <label>Contraseña</label>
+                                                            <input type="text" class="form-control" id="text-contrasena-resgister">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label>Email</label>
+                                                            <input type="email" class="form-control" id="text-email-resgister">
+                                                        </div>
+                                                        
                                                         <div class="form-group">
                                                             <label>Rol</label>
                                                             <select class="form-control" id="text-rol-resgister">
@@ -362,11 +366,6 @@
                                                                 <option>Administrador</option>
                                                                 <option>Operador</option>
                                                             </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label>Contraseña</label>
-                                                            <input type="text" class="form-control" id="text-contrasena-resgister">
                                                         </div>
 
                                                         <div class="checkbox">
@@ -566,10 +565,9 @@
 
             $('#example').DataTable({
                 language: {
-                    "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
+                    "url": "../../plugins/datatables/Spanish.json"
                 },
                 columns: [
-
                     {
                         "data": "id"
                     }, {
@@ -577,18 +575,18 @@
                     }, {
                         "data": "usuario"
                     }, {
+                        "data": "contrasena"
+                    }, {
                         "data": "email"
                     }, {
                         "data": "rol"
-                    }, {
-                        "data": "contrasena"
                     }, {
                         "data": "estatus"
                     }, {
                         "data": "release_date",
                         "orderable": false,
                         "render": function(data, type, row) {
-                            return '<button class="btn btn-info" data-toggle="modal" data-id="' + row.id + '" data-nombre="' + row.nombre + '" data-usuario="' + row.usuario + '" data-email="' + row.email + '" data-rol="' + row.rol + '" data-contrasena="' + row.contrasena + '" data-estatus="' + row.estatus + '" data-target="#myModal"><i class="fa fa-cog" aria-hidden="true"></i></button>'
+                            return '<button class="btn btn-info" data-toggle="modal" data-id="' + row.id + '" data-nombre="' + row.nombre + '" data-usuario="' + row.usuario + '"  data-contrasena="' + row.contrasena + '" data-email="' + row.email + '" data-rol="' + row.rol + '" data-estatus="' + row.estatus + '" data-target="#myModal"><i class="fa fa-cog" aria-hidden="true"></i></button>'
                         }
                     }
                 ]
@@ -599,10 +597,10 @@
                 var triggerLink = $(e.relatedTarget);
                 var id = triggerLink.data("id");
                 var nombre = triggerLink.data("nombre");
-                var usuario = triggerLink.data("usuario");
+                var usuario = triggerLink.data("usuario");                
+                var contrasena = triggerLink.data("contrasena");
                 var email = triggerLink.data("email");
                 var rol = triggerLink.data("rol");
-                var contrasena = triggerLink.data("contrasena");
                 var estatus = triggerLink.data("estatus");
                 
                 if(rol == "Operador"){
@@ -615,10 +613,10 @@
                 
                 $("#text-id").text("Id: " + id);
                 $("#text-nombre").val(nombre);
-                $("#text-usuario").val(usuario);
+                $("#text-usuario").val(usuario);                
+                $("#text-contrasena").val(contrasena);
                 $("#text-email").val(email);
                 $("#text-rol").val(rol);
-                $("#text-contrasena").val(contrasena);
 
                 if (estatus == "Activo") {
                     $('#text-estatus').prop('checked', true);
@@ -631,37 +629,6 @@
             });
 
         });
-        /*
-
-        $('#list-of-product').DataTable({
-            "ajax": {
-                url: "https://api.deezer.com/artist/1232/albums?output=jsonp",
-                type: "GET",
-                jsonp: 'callback',
-                dataType: 'jsonp',
-                crossDomain: true
-            },
-            "columns": [
-                    { "data": "title", "orderable": true },
-                    { "data": "link", "orderable": true },
-                    { "data": "cover", "orderable": true, "render": function(data, type, row) {return '<img class="img-fluid" src="'+data+'" />'} },
-                    { "data": "release_date", "orderable": true, "render": function(data, type, row) {return '<button class="btn btn-primary" data-toggle="modal" data-id="'+row.id+'" data-title="'+row.title+'" data-cover_small="'+row.cover_small+'" data-target="#myModal">'+data+'</button>'} },
-                    { "data": "cover_small", "orderable": true, "render": function(data, type, row) {return '<img src="'+data+'" />'}},
-                    { "data": "id", "orderable": true }
-            ],
-            "order": [[0, "asc"]],
-        });
-
-        $("#myModal").on('show.bs.modal', function (e) {
-            var triggerLink = $(e.relatedTarget);
-            var id = triggerLink.data("id");
-            var title = triggerLink.data("title");
-            var cover_small = triggerLink.data("cover_small");
-
-            $("#modalTitle").text(title);
-            $(this).find(".modal-body").html("<h5>id: "+id+"</h5><img src='"+cover_small+"'/>");
-        });
-        */
     </script>
 
 </body>
