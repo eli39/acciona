@@ -518,7 +518,7 @@
                     }, {
                         "data": "boton_dos",
                         "render": function() {
-                            return '<button type="button" class="btn btn-success" onclick="myFunctionTest()"><i class="fa fa-bolt" aria-hidden="true"></i></button>'
+                            return '<button type="button" class="btn btn-success" onclick="myFunctionTest()"><i class="fa fa-exchange" aria-hidden="true"></i></button>'
                         }
                     }
                 ]
