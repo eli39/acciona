@@ -203,7 +203,8 @@
                                         <th>Contraseña</th>
                                         <th>Puerto</th>
                                         <th>Ruta</th>
-                                        <th>Configuración</th>
+                                        <th>Editar</th>
+                                        <th>Probar</th>
                                     </tr>
                                 </thead>
                                 <tbody>    
@@ -215,6 +216,7 @@
                                         <td>22</td>
                                         <td>opt/mediciones/cincominutal/</td>
                                         <th></th>
+                                        <th></th>
                                     </tr> 
                                     <tr>
                                         <td>2</td>
@@ -224,6 +226,7 @@
                                         <td>22</td>
                                         <td>opt/mediciones/cincominutal/</td>
                                         <th></th>
+                                        <th></th>
                                     </tr> 
                                     <tr>
                                         <td>3</td>
@@ -232,6 +235,7 @@
                                         <td>zzzzzzzzz</td>
                                         <td>22</td>
                                         <td>opt/mediciones/cincominutal/</td>
+                                        <th></th>
                                         <th></th>
                                     </tr>                                
 
@@ -484,6 +488,7 @@
     <script src="../../dist/js/adminlte.min.js"></script>
     <!-- Datatables -->
     <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../plugins/sweetalert/sweetalert.min.js"></script>
     <script>
         $(document).ready(function() {
 
@@ -506,10 +511,14 @@
                     }, {
                         "data": "ruta"
                     }, {
-                        "data": "release_date",
-                        "orderable": false,
+                        "data": "boton_uno",
                         "render": function(data, type, row) {
-                            return '<button class="btn btn-info" data-toggle="modal" data-id="' + row.id + '" data-nombre="' + row.nombre + '" data-usuario="' + row.usuario + '" data-contrasena="' + row.contrasena + '" data-puerto="' + row.puerto + '" data-ruta="' + row.ruta + '" data-target="#myModal"><i class="fa fa-cog" aria-hidden="true"></i></button>'
+                            return '<button class="btn btn-info" data-toggle="modal" data-id="' + row.id + '" data-nombre="' + row.nombre + '" data-usuario="' + row.usuario + '" data-contrasena="' + row.contrasena + '" data-puerto="' + row.puerto + '" data-ruta="' + row.ruta + '" data-target="#myModal"><i class="fa fa-pencil" aria-hidden="true"></i></button>'
+                        }
+                    }, {
+                        "data": "boton_dos",
+                        "render": function() {
+                            return '<button type="button" class="btn btn-success" onclick="myFunctionTest()"><i class="fa fa-bolt" aria-hidden="true"></i></button>'
                         }
                     }
                 ]
@@ -536,6 +545,13 @@
             });
 
         });
+
+        function myFunctionTest() {
+          swal("Conectado", "", "success", {
+            button: "OK",
+          });
+        }
+
         /*
 
         $('#list-of-product').DataTable({

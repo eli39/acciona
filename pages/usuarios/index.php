@@ -203,7 +203,7 @@
                                             <th>Email</th>
                                             <th>Rol</th>
                                             <th>Estatus</th>
-                                            <th>Configuración</th>
+                                            <th>Editar</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -586,7 +586,7 @@
                         "data": "release_date",
                         "orderable": false,
                         "render": function(data, type, row) {
-                            return '<button class="btn btn-info" data-toggle="modal" data-id="' + row.id + '" data-nombre="' + row.nombre + '" data-usuario="' + row.usuario + '"  data-contrasena="' + row.contrasena + '" data-email="' + row.email + '" data-rol="' + row.rol + '" data-estatus="' + row.estatus + '" data-target="#myModal"><i class="fa fa-cog" aria-hidden="true"></i></button>'
+                            return '<button class="btn btn-info" data-toggle="modal" data-id="' + row.id + '" data-nombre="' + row.nombre + '" data-usuario="' + row.usuario + '"  data-contrasena="' + row.contrasena + '" data-email="' + row.email + '" data-rol="' + row.rol + '" data-estatus="' + row.estatus + '" data-target="#myModal"><i class="fa fa-pencil" aria-hidden="true"></i></button>'
                         }
                     }
                 ]

@@ -236,7 +236,7 @@
                 <div class="icon">
                   <i class="fa fa-cog"></i>
                 </div>
-                <a href="pages/configuracion/index.php" class="small-box-footer">Ver más <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="pages/configuracion/servidor.php" class="small-box-footer">Ver más <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->
