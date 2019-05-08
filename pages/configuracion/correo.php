@@ -180,6 +180,7 @@
         <!-- Main content -->
         <section class="content">
             <div class="row">
+
                 <div class="col-xs-12">
                     <div class="box box-danger">
                         <div class="box-header">
@@ -187,6 +188,62 @@
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
+
+                          <div class="col-md-6">
+                                <!-- form start -->
+                                <form class="form-horizontal">
+                                  <div class="box-body">
+                                    
+                                  <div class="form-group">
+                                      <label class="col-sm-2 control-label">Host</label>
+                                      <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="" placeholder="Host">
+                                      </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                      <label class="col-sm-2 control-label">Remitente</label>
+                                      <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="" placeholder="Remitente">
+                                      </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                      <label class="col-sm-2 control-label">Contraseña</label>
+                                      <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="" placeholder="Contraseña">
+                                      </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                      <label class="col-sm-2 control-label">Puerto</label>
+                                      <div class="col-sm-10">
+                                        <input type="number" class="form-control" id="" placeholder="Puerto">
+                                      </div>
+                                    </div>
+
+                                    
+
+
+
+                                  </div>
+                                  <!-- /.box-body -->
+                                  <div class="box-footer">
+                                    
+                                    <button type="button" class="btn btn-info pull-right" id="test">Probar</button>
+                                    
+                                    <button type="button" class="btn btn-success pull-right" style="margin-right:30px">Guardar</button>
+                                    
+                                  </div>
+                                  <!-- /.box-footer -->
+                                </form>
+                          </div>
+
+
+
+
+
+
 
 
                         </div>
@@ -295,6 +352,8 @@
     <script src="../../dist/js/adminlte.min.js"></script>
     <!-- Datatables -->
     <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../plugins/sweetalert/sweetalert.min.js"></script>
+
     <script>
     $(document).ready(function() {
 
@@ -313,6 +372,15 @@
         });
     
     
+    });
+
+    $("#test").click(function() {
+
+      swal("Conectado", "", "success", {
+        button: "OK",
+      });
+
+
     });
 
 
