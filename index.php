@@ -66,16 +66,16 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="dist/img/eli.jpg" class="user-image" alt="User Image">
-                  <span class="hidden-xs">Eli Álvarez</span>
+                  <img src="dist/img/avatar5.png" class="user-image" alt="User Image">
+                  <span class="hidden-xs">Administrador</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="dist/img/eli.jpg" class="img-circle" alt="User Image">
+                    <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
 
                     <p>
-                      Eli Álvarez - Administrador
+                      Administrador - Administrador
                       <small>Miembro desde Feb. 2019</small>
                     </p>
                   </li>
@@ -105,10 +105,10 @@
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="dist/img/eli.jpg" class="img-circle" alt="User Image">
+              <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-              <p>Eli Álvarez</p>
+              <p>Administrador</p>
               <a href="#"><i class="fa fa-circle text-success"></i> En línea </a>
             </div>
           </div>
