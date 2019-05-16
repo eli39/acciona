@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Acciona | Usuarios </title>
+    <title>Acciona | Medidor </title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -142,13 +142,13 @@
                         </a>
                     </li>
 
-                    <li class="active">
+                    <li>
                         <a href="../../pages/usuarios/index.php">
                             <i class="fa fa-users"></i> <span> Usuarios </span>
                         </a>
                     </li>
                     
-                    <li class="treeview">
+                    <li class="treeview active">
                         <a href="#">
                             <i class="fa fa-list-alt"></i> <span> Catálogos </span>
                             <span class="pull-right-container">
@@ -186,12 +186,12 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-            Usuarios
+            Medidor
             <small>Control panel</small>
           </h1>
                 <ol class="breadcrumb">
                     <li><a href="../../index.php"><i class="fa fa-dashboard"></i> Dashboard </a></li>
-                    <li class="active"> Usuarios </li>
+                    <li class="active"> Medidor </li>
                 </ol>
             </section>
 
@@ -202,7 +202,7 @@
                         <div class="box box-danger">
 
                             <div class="box-header">
-                                <h3 class="box-title"> Administrador de usuarios </h3>
+                                <h3 class="box-title"> Administrador de medidores </h3>
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">
@@ -211,44 +211,32 @@
                                     <thead>
                                         <tr>
                                             <th>Id</th>
-                                            <th>Nombre</th>
-                                            <th>Usuario</th>                                            
-                                            <th>Contraseña</th>
-                                            <th>Email</th>
-                                            <th>Rol</th>
-                                            <th>Estatus</th>
+                                            <th>Clave</th>
+                                            <th>Nombre</th>                                            
+                                            <th>Descripción</th>
                                             <th>Editar</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1000</td>
-                                            <td>África Sofía Álvarez Hénandez</td>
-                                            <td>africa1000</td>
-                                            <td>asar</td>
-                                            <td>africa@acciona.com</td>
-                                            <td>Administrador</td>                                            
-                                            <td>Activo</td>
+                                            <td>PA0C0DA170SNT5100B</td>
+                                            <td>Medidor 1</td>
+                                            <td>Medidor de pruebas 1</td>
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <td>1001</td>
-                                            <td>Administrador Romero</td>
-                                            <td>eli1001</td>
-                                            <td>ear</td>
-                                            <td>eli@acciona.com</td>
-                                            <td>Operador</td>                                            
-                                            <td>Activo</td>
+                                            <td>2000</td>
+                                            <td>PA0C0DA170SNT5100B</td>
+                                            <td>Medidor 2</td>
+                                            <td>Medidor de pruebas 2</td>
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <td>1002</td>
-                                            <td>Juan Manuel Roque Jacinto</td>                                            
-                                            <td>juan1002</td>
-                                            <td>jmrj</td>
-                                            <td>juan@acciona.com</td>
-                                            <td>Operador</td>                                            
-                                            <td>Inactivo</td>
+                                            <td>3000</td>
+                                            <td>PA0C0DA170SNT5100B</td>
+                                            <td>Medidor 3</td>
+                                            <td>Medidor de pruebas 3</td>
                                             <td></td>
                                         </tr>
                                     </tbody>
@@ -271,63 +259,22 @@
                                                     <div class="box-body">
 
                                                         <div class="form-group">
+                                                            <label>Clave</label>
+                                                            <input type="text" class="form-control" id="text-clave">
+                                                        </div>
+
+
+                                                        <div class="form-group">
                                                             <label>Nombre</label>
                                                             <input type="text" class="form-control" id="text-nombre">
                                                         </div>
+
                                                         
                                                         <div class="form-group">
-                                                            <label>Usuario</label>
-                                                            <input type="text" class="form-control" id="text-usuario">
+                                                            <label>Descripción</label>
+                                                            <input type="text" class="form-control" id="text-descripcion">
                                                         </div>
-
-                                                        <div class="form-group">
-                                                            <label>Contraseña</label>
-                                                            <input type="text" class="form-control" id="text-contrasena">
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label>Email</label>
-                                                            <input type="email" class="form-control" id="text-email">
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label>Rol</label>
-                                                            <select class="form-control" id="text-rol">
-                                                                <option>Administrador</option>                                                                
-                                                                <option>Operador</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox" id="text-estatus"> Activo
-                                                            </label>
-                                                        </div>
-
-                                                    </div>
-                                                    <!-- /.box-body -->
-                                                    <div class="box-body" id="data-server-edit">
-
-                                                        <div class="form-group">
-                                                            <label>Servidor</label>
-                                                            <select class="form-control" id="text-servidor-resgister">
-                                                                <option selected>Seleccionar...</option>
-                                                                <option>Servidor 1</option>
-                                                                <option>Servidor 2</option>
-                                                                <option>Servidor 3</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label>Medidor</label>
-                                                            <select class="form-control" id="text-servidor-resgister">
-                                                                <option selected>Seleccionar...</option>
-                                                                <option>Medidor 1</option>
-                                                                <option>Medidor 2</option>
-                                                                <option>Medidor 3</option>
-                                                            </select>
-                                                        </div>
-
+                                                        
                                                     </div>
                                                     <!-- /.box-body -->
                                                 </form>
@@ -354,7 +301,7 @@
                                             <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">×</span></button>
-                                                <h4 class="modal-title"> Nuevo Usuario </h4>
+                                                <h4 class="modal-title"> Nuevo Medidor </h4>
                                             </div>
 
                                             <div class="modal-body">
@@ -364,65 +311,21 @@
                                                     <div class="box-body">
 
                                                         <div class="form-group">
+                                                            <label>Clave</label>
+                                                            <input type="text" class="form-control" id="text-clave-resgister">
+                                                        </div>
+
+                                                        <div class="form-group">
                                                             <label>Nombre</label>
                                                             <input type="text" class="form-control" id="text-nombre-resgister">
                                                         </div>
-
-                                                        <div class="form-group">
-                                                            <label>Usuario</label>
-                                                            <input type="text" class="form-control" id="text-usuario-resgister">
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label>Contraseña</label>
-                                                            <input type="text" class="form-control" id="text-contrasena-resgister">
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label>Email</label>
-                                                            <input type="email" class="form-control" id="text-email-resgister">
-                                                        </div>
                                                         
                                                         <div class="form-group">
-                                                            <label>Rol</label>
-                                                            <select class="form-control" id="text-rol-resgister">
-                                                                <option selected>Seleccionar...</option>
-                                                                <option>Administrador</option>
-                                                                <option>Operador</option>
-                                                            </select>
+                                                            <label>Descripción</label>
+                                                            <input type="text" class="form-control" id="text-descripcion-resgister">
                                                         </div>
 
-
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox" id="text-estatus-resgister"> Activo
-                                                            </label>
-                                                        </div>
-
-                                                    </div>
-                                                    <!-- /.box-body -->
-                                                    <div class="box-body" id="data-server-register">
-
-                                                        <div class="form-group">
-                                                            <label>Servidor</label>
-                                                            <select class="form-control" id="text-servidor-resgister">
-                                                                <option selected>Seleccionar...</option>
-                                                                <option>Servidor 1</option>
-                                                                <option>Servidor 2</option>
-                                                                <option>Servidor 3</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label>Medidor</label>
-                                                            <select class="form-control" id="text-servidor-resgister">
-                                                                <option selected>Seleccionar...</option>
-                                                                <option>Medidor 1</option>
-                                                                <option>Medidor 2</option>
-                                                                <option>Medidor 3</option>
-                                                            </select>
-                                                        </div>
-
+                                                        
                                                     </div>
                                                     <!-- /.box-body -->
 
@@ -455,10 +358,10 @@
                         <!-- Block buttons -->
                         <div class="box box-danger">
                             <div class="box-header">
-                                <h3 class="box-title">Nuevo Usuario</h3>
+                                <h3 class="box-title">Nuevo Medidor</h3>
                             </div>
                             <div class="box-body">
-                                <button class="btn btn-danger btn-block" data-toggle="modal" data-target="#myModalRegistro"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
+                                <button class="btn btn-danger btn-block" data-toggle="modal" data-target="#myModalRegistro"><i class="fa fa-certificate" aria-hidden="true"></i></button>
                             </div>
                         </div>
                         <!-- /.box -->
@@ -571,33 +474,6 @@
     <script>
         $(document).ready(function() {
 
-            $("#data-server-edit").hide();
-            $("#data-server-register").hide();
-
-            $("#text-rol-resgister").change(function() {
-              var rol = $("#text-rol-resgister").val();            
-              if(rol == "Operador") {
-                console.log(rol);
-                $("#data-server-register").show();
-              }
-              if(rol == "Administrador") {
-                console.log(rol);
-                $("#data-server-register").hide();
-              }
-            });
-
-            $("#text-rol").change(function() {
-              var rol = $("#text-rol").val();            
-              if(rol == "Operador") {
-                console.log(rol);
-                $("#data-server-edit").show();
-              }
-              if(rol == "Administrador") {
-                console.log(rol);
-                $("#data-server-edit").hide();
-              }
-            });
-
             $('#example').DataTable({
                 language: {
                     "url": "../../plugins/datatables/Spanish.json"
@@ -606,22 +482,16 @@
                     {
                         "data": "id"
                     }, {
+                        "data": "clave"
+                    }, {
                         "data": "nombre"
                     }, {
-                        "data": "usuario"
-                    }, {
-                        "data": "contrasena"
-                    }, {
-                        "data": "email"
-                    }, {
-                        "data": "rol"
-                    }, {
-                        "data": "estatus"
+                        "data": "descripcion"
                     }, {
                         "data": "release_date",
                         "orderable": false,
                         "render": function(data, type, row) {
-                            return '<button class="btn btn-info" data-toggle="modal" data-id="' + row.id + '" data-nombre="' + row.nombre + '" data-usuario="' + row.usuario + '"  data-contrasena="' + row.contrasena + '" data-email="' + row.email + '" data-rol="' + row.rol + '" data-estatus="' + row.estatus + '" data-target="#myModal"><i class="fa fa-pencil" aria-hidden="true"></i></button>'
+                            return '<button class="btn btn-info" data-toggle="modal" data-id="' + row.id + '" data-clave="' + row.clave + '" data-nombre="' + row.nombre + '"  data-descripcion="' + row.descripcion + '" data-target="#myModal"><i class="fa fa-pencil" aria-hidden="true"></i></button>'
                         }
                     }
                 ]
@@ -631,36 +501,14 @@
 
                 var triggerLink = $(e.relatedTarget);
                 var id = triggerLink.data("id");
-                var nombre = triggerLink.data("nombre");
-                var usuario = triggerLink.data("usuario");                
-                var contrasena = triggerLink.data("contrasena");
-                var email = triggerLink.data("email");
-                var rol = triggerLink.data("rol");
-                var estatus = triggerLink.data("estatus");
-                
-                if(rol == "Operador"){
-                  $("#data-server-edit").show();
-                }
-                
-                if(rol == "Administrador"){
-                  $("#data-server-edit").hide();
-                }
-                
+                var clave = triggerLink.data("clave");
+                var nombre = triggerLink.data("nombre");                
+                var descripcion = triggerLink.data("descripcion");
+        
                 $("#text-id").text("Id: " + id);
-                $("#text-nombre").val(nombre);
-                $("#text-usuario").val(usuario);                
-                $("#text-contrasena").val(contrasena);
-                $("#text-email").val(email);
-                $("#text-rol").val(rol);
-
-                if (estatus == "Activo") {
-                    $('#text-estatus').prop('checked', true);
-                }
-
-                if (estatus == "Inactivo") {
-                    $('#text-estatus').prop('checked', false);
-                }
-
+                $("#text-clave").val(clave);
+                $("#text-nombre").val(nombre);                
+                $("#text-descripcion").val(descripcion);
             });
 
         });
